@@ -6,10 +6,13 @@
   "dependencies": {
     "@types/readline-sync": "^1.4.4",
     "axios": "^1.4.0",
+    "nodemon": "^2.0.22",
+    "qs": "^6.11.1",
     "readline-sync": "^1.4.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start1": "nodemon lesson4_Tổng-quan-về-ud-web-và-HTTP/TH_Tạo-web-server-đơn-giản.js"
   },
   "author": "",
   "license": "ISC",
