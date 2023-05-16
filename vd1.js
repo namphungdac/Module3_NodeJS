@@ -1,21 +1,12 @@
-function printNumber(number) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (number < 0) {
-                reject('number < 0')
-            } else {
-                console.log(number);
-                resolve();
-            }
-        }, 1000)
-    })
+let a = {
+    name: 'AAA',
+    phone: 123,
+    address: 'HN',
 }
-
-async function printAll(){
-    await printNumber(1);
-    await printNumber(-3);
-    await printNumber(2);
-}
-
-printAll()
-    .catch(err => console.log(err))
+let arr = [];
+for (let key in a) {
+    let newObj = {[key]: a[key]};
+    arr.push(newObj);
+    console.log(a[key]);
+};
+// console.log(arr);

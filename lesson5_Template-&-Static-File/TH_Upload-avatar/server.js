@@ -6,7 +6,7 @@ let users = [];
 
 let server = http.createServer(function (req, res) {
     if (req.method === 'GET') {
-        fs.readFile('./views/register.html', function (err, data) {
+        fs.readFile('./views/index.html', function (err, data) {
             res.writeHead(200, {'Content-Type': 'text/html'});
             res.write(data);
             return res.end();

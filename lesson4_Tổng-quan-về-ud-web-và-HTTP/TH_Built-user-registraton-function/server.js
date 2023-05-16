@@ -4,8 +4,8 @@ const qs = require('qs')
 
 const server = http.createServer(function (req, res) {
     if (req.method === 'GET') {
-        fs.readFile('./register.html', 'utf8',function (err, data) {
-            // console.log(data);// in ra đoạn mã trong file register.html
+        fs.readFile('./index.html', 'utf8',function (err, data) {
+            // console.log(data);// in ra đoạn mã trong file index.html
             //Nếu không để option = 'utf8' thì data sẽ đc mã hóa dưới dạng <Buffer 6e 61 6d 65 3d ... 16 more bytes
             res.writeHead(200, { 'Content-Type': 'text/html' });
             res.write(data);

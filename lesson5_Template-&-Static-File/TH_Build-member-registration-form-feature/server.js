@@ -4,7 +4,7 @@ const qs = require('qs');
 
 const server = http.createServer((req, res) => {
     if (req.method === 'GET') {
-        fs.readFile('./views/register.html', 'utf8', (err, data) => {
+        fs.readFile('./views/index.html', 'utf8', (err, data) => {
             if (err) console.log(err);
             else {
                 res.writeHead(200, {'Content-Type': 'text/html'});
